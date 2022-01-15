@@ -44,10 +44,6 @@ h1,h2,h3,h4,h5{
     text-decoration: none;
     color: #404040;
 }
-/* .container{
-    width: 100%;
-    margin: 0 auto;
-} */
 
 /* CSS for Banner */
 
@@ -58,8 +54,7 @@ h1,h2,h3,h4,h5{
     justify-content: space-between;
 }
 .banner-left{
-    width: 55%;
-    /* padding: 4% 0; */
+    width: 60%;
 }
 .banner-heading{
     font-size: 50px;
@@ -86,14 +81,13 @@ h1,h2,h3,h4,h5{
     transform: scale(1.1)
 }
 .banner-right{
-    width: 50%;
     background-image: url(images/Circle\ design.svg);
     background-repeat: no-repeat;
     padding: 4% 0 4% 4%;
     transition: transform 1s linear;
 }
 .banner-image{
-    width: 80%;
+    width: 90%;
 }
 .banner-right:hover{
     transform: scale(1.05)
@@ -249,19 +243,11 @@ h1,h2,h3,h4,h5{
     flex-direction: column;
     align-items: center;
         }
-/* .banner-left {
-    width: 80%;
-    padding: 4%;
-    margin: 0 auto;
-        } */
 .banner-right{
             width: 100%;
             padding: 5%;
             margin: 30px auto;
-        }
-  .banner-image{
-      
-  }      
+        }     
 .company-logo{
     display: none;
         }
@@ -348,6 +334,6 @@ h1,h2,h3,h4,h5{
         /* image gallery CSS */
     
     .gallery-images{
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
 }
