@@ -44,51 +44,59 @@ h1,h2,h3,h4,h5{
     text-decoration: none;
     color: #404040;
 }
-.container{
+/* .container{
     width: 100%;
     margin: 0 auto;
-}
+} */
 
 /* CSS for Banner */
 
 .banner-section{
+    width: 90%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 .banner-left{
-    width: 40%;
-    padding: 4%;
+    width: 55%;
+    /* padding: 4% 0; */
 }
 .banner-heading{
     font-size: 50px;
+    transition: transform 2s linear;
+}
+.banner-heading:hover{
+    transform: scale(1.1);
 }
 .banner-text{
-    font-size: 18px;
-    padding-bottom: 20px;
+    font-size: 16px;
+    padding: 25px 0;
 }
 .banner-btn{
-    padding: 5px 30px;
-    background-color: #FF7878;
+    padding: 5px 25px;
+    background-color: #E02C6D;
     border-radius: 15px;
     color: white;
-    font-size: 19px;
-    font-weight: 500;
-    border: #FF7878;
-
+    font-size: 16px;
+    font-weight: 400;
+    border: #E02C6D;
+    transition: transform 2s linear;
 }
-.banner-btn:hover .banner-right img{
-    transform: rotate(30deg);
+.banner-btn:hover{
+    transform: scale(1.1)
 }
 .banner-right{
-    width: 40%;
+    width: 50%;
     background-image: url(images/Circle\ design.svg);
     background-repeat: no-repeat;
     padding: 4% 0 4% 4%;
+    transition: transform 1s linear;
 }
 .banner-image{
-    width: 70%;
-    transition: transform 1s linear;
+    width: 80%;
+}
+.banner-right:hover{
+    transform: scale(1.05)
 }
 
 /* CSS for eCom Logo */
@@ -132,6 +140,19 @@ h1,h2,h3,h4,h5{
 .product-description{
     color: #7B7B88;
     line-height: 20px;
+}
+.see-more a{
+    padding: 10px;
+    text-decoration: none;
+    color: #E02C6D;
+    font-size: 16px;
+    font-weight: 600;
+}
+.see-more{
+    display: flex;
+    justify-content: end;
+    padding-top: 30px;
+    margin-right: 120px;
 }
 
 /* CSS for Images Gallery */
@@ -194,7 +215,7 @@ h1,h2,h3,h4,h5{
     background-color:#0A0826;  
     }
 .logo-part h2{
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 25px;
 }
 .header-icon{
@@ -222,21 +243,25 @@ h1,h2,h3,h4,h5{
 } 
    /* Banner CSS for Phone    */
    .banner-heading{
-    font-size: 25px;
+    font-size: 30px;
 }
 .banner-section{
     flex-direction: column;
     align-items: center;
         }
-.banner-left {
+/* .banner-left {
     width: 80%;
     padding: 4%;
-    align-items: center;
-    justify-content: center;
-        }
-.banner-image{
+    margin: 0 auto;
+        } */
+.banner-right{
             width: 100%;
+            padding: 5%;
+            margin: 30px auto;
         }
+  .banner-image{
+      
+  }      
 .company-logo{
     display: none;
         }
@@ -252,13 +277,13 @@ h1,h2,h3,h4,h5{
     /* image gallery CSS */
 
 .gallery-images{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
 
 }
 
-@media only screen and (min-width:688px) and (max-width:1024px){
+@media only screen and (min-width:689px) and (max-width:1024px){
     .nav-bar-with-icon i{
         color: white;
         background-color:#0A0826;  
