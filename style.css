@@ -1,0 +1,327 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* CSS for Nav bar */
+.nav-bar-with-icon i{
+    margin: 60px 0 0 10px;
+    color: white;
+    background-color:#858585;
+    border-radius: 50%;
+    padding: 8px;
+}
+.nav-bar-with-icon{
+    display: flex;
+    width: 80%;
+    margin: 0 auto; 
+}
+.nav-bar{
+    width: 80%;
+    margin: 0 auto; 
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu-items{
+    list-style: none;
+    display: flex;
+}
+.nav-item{
+    padding: 0 15px;
+}
+.nav-item:hover{
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+.nav-link{
+    text-decoration: none;
+    color: #404040;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* CSS for Banner */
+
+.banner-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.banner-left{
+    width: 40%;
+    padding: 4%;
+}
+.banner-heading{
+    font-size: 50px;
+}
+.banner-text{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.banner-btn{
+    padding: 5px 30px;
+    background-color: #FF7878;
+    border-radius: 15px;
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+    border: #FF7878;
+
+}
+.banner-btn:hover .banner-right img{
+    transform: rotate(30deg);
+}
+.banner-right{
+    width: 40%;
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    padding: 4% 0 4% 4%;
+}
+.banner-image{
+    width: 70%;
+    transition: transform 1s linear;
+}
+
+/* CSS for eCom Logo */
+.company-logo{
+    width: 70%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+.company-logo img{
+    padding: 2% 2%;
+}
+
+/* CSS for products Section */
+.popular-collection-title{
+    text-align: center;
+    padding-bottom: 3%;
+}
+.popular-collection{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.product-item{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+    padding: 5%;
+}
+.products-title{
+    padding: 5% 0;
+}
+.product-review{
+    color: #FB8200;
+    padding: 3% 0;
+}
+.average-rating{
+    color: black;
+}
+.product-description{
+    color: #7B7B88;
+    line-height: 20px;
+}
+
+/* CSS for Images Gallery */
+.image-gallery-title{
+    text-align: center;
+    padding: 3%;
+    margin-top: 30px;
+}
+.gallery-images{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.images-item{
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+.images-item img{
+    width: 250px;
+    transition: transform .6s linear; 
+}
+.images-item :hover{
+    transform: scale(1.1);
+}
+
+/* CSS for Footer */
+.footer-part{
+    background-color: #0A0826;
+    padding: 3%;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+.footer-part h2{
+    padding-bottom: 10px;
+}
+.footer-part p{
+    color: #ADAFBA;
+}
+.social-media-icon{
+    padding: 15px;
+}
+.social-media-icon i{
+    background-color: #22203B;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+
+/* Media Query */
+@media only screen and (max-width: 688px){
+
+    /* Header CSS for phone */
+.nav-bar-with-icon i{
+    color: white;
+    background-color:#0A0826;  
+    }
+.logo-part h2{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.header-icon{
+    display: flex;
+}
+.nav-bar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu-items{
+    flex-direction: column;
+    gap: 5px;
+        } 
+.nav-item{
+    background-color: #0A0826;
+    padding: 3px 100px;
+    border-radius: 5px;
+}           
+.nav-item:hover{
+    background-color: #070620;
+}           
+.nav-link{
+    color: white;
+} 
+   /* Banner CSS for Phone    */
+   .banner-heading{
+    font-size: 25px;
+}
+.banner-section{
+    flex-direction: column;
+    align-items: center;
+        }
+.banner-left {
+    width: 80%;
+    padding: 4%;
+    align-items: center;
+    justify-content: center;
+        }
+.banner-image{
+            width: 100%;
+        }
+.company-logo{
+    display: none;
+        }
+  /* Products CSS for phone   */
+  .popular-collection{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+}
+    
+    /* image gallery CSS */
+
+.gallery-images{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+@media only screen and (min-width:688px) and (max-width:1024px){
+    .nav-bar-with-icon i{
+        color: white;
+        background-color:#0A0826;  
+        }
+    .logo-part h2{
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    .header-icon{
+        display: flex;
+    }
+    .nav-bar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-menu-items{
+        flex-direction: column;
+        gap: 5px;
+            } 
+    .nav-item{
+        background-color: #0A0826;
+        padding: 3px 100px;
+        border-radius: 5px;
+    }           
+    .nav-item:hover{
+        background-color: #05041d;
+    }           
+    .nav-link{
+        color: white;
+    } 
+       /* Banner CSS for Phone    */
+    .banner-heading{
+        font-size: 30px;
+    }
+    .banner-section{
+        flex-direction: column;
+        align-items: center;
+            }
+    .banner-left {
+        width: 80%;
+        padding: 4%;
+        align-items: center;
+        justify-content: center;
+            }
+    .banner-image{
+                width: 500px;
+            }
+    .company-logo{
+        display: none;
+            }
+      /* Products CSS for phone   */
+      .popular-collection{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+        
+        /* image gallery CSS */
+    
+    .gallery-images{
+            grid-template-columns: repeat(3, 1fr);
+        }
+}
